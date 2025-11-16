@@ -1,0 +1,131 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Dashboard - Quản trị";
+}
+
+<h1 class="h3 mb-4 text-gray-800">Dashboard Quản trị</h1>
+
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Sản phẩm</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TongSanPham</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-hamburger fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Loại sản phẩm</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TongLoai</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-th-list fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Hóa đơn</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TongHoaDon</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-file-invoice-dollar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Khách hàng</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TongKhachHang</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-users fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Tổng doanh thu</h6>
+            </div>
+            <div class="card-body">
+                <h4 class="text-success font-weight-bold">@ViewBag.TongDoanhThu.ToString("N0") đ</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" id="getItemList" class="btn btn-primary mb-3">
+    <i class="fas fa-list"></i> Danh Sách Các Món Ăn Hôm Nay
+</button>
+<table class="table table-bordered ItemTable">
+    <thead class="table-dark">
+        <tr>
+            <th>Tên Món</th>
+            <th>Giá Món</th>
+            <th>Loại Món</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#getItemList').click(function () {
+                $('.ItemTable tbody').empty();
+
+                $.ajax({
+                    type: 'GET',
+                    url: '/api/Home',
+                    success: function (response) {
+                        if (response && response.length > 0) {
+                            for (var i = 0; i < response.length; i++) {
+                                const itemRow = response[i];
+                                const strHTML = '<tr><td>' + itemRow.TenSP + '</td><td>' +
+                                    (itemRow.Gia ? itemRow.Gia.toLocaleString() + ' đ' : 'N/A') +
+                                    '</td><td>' + (itemRow.TenLoai || 'Chưa phân loại') + '</td></tr>';
+                                $('.ItemTable tbody').append(strHTML);
+                            }
+                        } else {
+                            $('.ItemTable tbody').append('<tr><td colspan="3" class="text-center text-muted">Không có dữ liệu</td></tr>');
+                        }
+                    },
+                    error: function (err) {
+                        console.log(err);
+                        alert('Lỗi khi tải dữ liệu từ API');
+                    }
+                });
+            });
+        });
+    </script>
+}

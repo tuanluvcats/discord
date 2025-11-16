@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "VeJollibee";
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+<style>
+    .jolli-banner {
+        width: 100%;
+        height: 420px;
+background-image: url('@Url.Content("~/Content/HinhAnhLogo/jollibee.png")');
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+        margin-bottom: 40px;
+    }
+
+
+    .section-title {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #d1001f;
+        text-transform: uppercase;
+    }
+
+
+    .jolli-section {
+        margin-bottom: 50px;
+    }
+
+
+    .jolli-img {
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+
+
+    .highlight-box {
+        background: #fff4f4;
+        border-left: 6px solid #d1001f;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+
+    .value-icon {
+        font-size: 48px;
+        color: #d1001f;
+    }
+</style>
+<div class="container mt-4 mb-5">
+    <div class="container mt-4 mb-5">
+
+
+        <div class="jolli-banner"></div>
+
+
+        <div class="jolli-section text-center">
+            <h2 class="section-title">Về Jollibee Việt Nam</h2>
+            <p class="lead" style="font-size:19px; max-width:900px; margin:auto; line-height:1.7;">
+                Jollibee là thương hiệu thức ăn nhanh hàng đầu châu Á, nổi tiếng với món gà rán Chickenjoy.
+                Tại Việt Nam, Jollibee đã trở thành điểm đến quen thuộc của các gia đình, mang đến trải nghiệm ẩm thực vui vẻ,
+                ngon miệng và ấm áp.
+            </p>
+        </div>
+        <div class="row jolli-section">
+            <div class="col-md-6">
+                <img src="~/Content/HinhAnhLogo/jollibee2.png" class="img-fluid jolli-img" />
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h3 class="section-title" style="font-size:26px;">Sứ mệnh của Jollibee</h3>
+                    <p style="font-size:17px; line-height:1.7;">
+                        Mang đến niềm vui ẩm thực cho mỗi khách hàng thông qua những món ăn chất lượng,
+                        dịch vụ chu đáo và không gian thân thiện dành riêng cho gia đình.
+                    </p>
+
+
+                    <div class="highlight-box">
+                        <strong>"Where Joy is served"</strong> – nơi mỗi bữa ăn đều mang đến niềm vui.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row jolli-section text-center">
+            <h3 class="section-title w-100">Giá trị cốt lõi</h3>
+
+
+            <div class="col-md-4">
+                <div>
+                    <div class="value-icon mb-3">🍗</div>
+                    <h5>Chất lượng hàng đầu</h5>
+                    <p>Nguyên liệu được kiểm soát nghiêm ngặt, đảm bảo an toàn và hương vị thơm ngon.</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div>
+                    <div class="value-icon mb-3">👪</div>
+                    <h5>Gia đình là trọng tâm</h5>
+                    <p>Không gian và món ăn được thiết kế thân thiện cho gia đình Việt.</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div>
+                    <div class="value-icon mb-3">❤️</div>
+                    <h5>Niềm vui phục vụ</h5>
+                    <p>Jollibee luôn mang đến nụ cười và dịch vụ tận tình trong từng khoảnh khắc.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row jolli-section">
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h3 class="section-title" style="font-size:26px;">Hành trình phát triển</h3>
+                    <p style="font-size:17px; line-height:1.7;">
+                        Với hơn 200 cửa hàng trên toàn quốc, Jollibee không ngừng mở rộng mạng lưới,
+                        cải tiến chất lượng và nâng cấp menu để phục vụ tốt hơn cho mọi khách hàng trên khắp Việt Nam.
+                    </p>
+                    <ul>
+                        <li>200+ cửa hàng toàn quốc</li>
+                        <li>Nhà máy sản xuất chuẩn quốc tế</li>
+                        <li>Menu phù hợp khẩu vị Việt Nam</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <img src="/Content/images/jolli-family.jpg" class="img-fluid jolli-img" />
+            </div>
+        </div>
+
+
+        <div class="text-center mt-5">
+            <img src="/Content/images/jolli-mascot.png" style="max-width:280px;" />
+            <h3 class="mt-3" style="font-weight:700; color:#d1001f;">Niềm vui ẩm thực dành cho mọi gia đình</h3>
+        </div>
+
+
+    </div>

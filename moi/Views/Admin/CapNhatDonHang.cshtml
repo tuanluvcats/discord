@@ -1,0 +1,50 @@
+﻿@model moi.Models.HoaDon
+@{
+    ViewBag.Title = "CapNhatDonHang";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    var chiTiet = ViewBag.ChiTiet as List<moi.Models.ChiTietHoaDon>;
+    var thanhToan = Model.ThanhToans.FirstOrDefault();
+    var ngayHienThi = thanhToan?.NgayThanhToan ?? Model.NgayLap ?? DateTime.Now;
+}
+
+<h2 class="mb-3">🧾 Chi tiết đơn hàng #@Model.MaHD</h2>
+
+<div class="card p-3 mb-4">
+    <p><strong>Khách hàng:</strong> @Model.KhachHang.HoTen</p>
+    <p><strong>Ngày lập:</strong> @ngayHienThi.ToString("dd/MM/yyyy HH:mm:ss")</p>
+    <p><strong>Tổng tiền:</strong> @String.Format("{0:N0} ₫", Model.TongTien)</p>
+
+    @using (Html.BeginForm("CapNhatDonHang", "Admin", FormMethod.Post))
+    {
+        @Html.HiddenFor(m => m.MaHD)
+        <div class="form-group">
+            <label>Trạng thái đơn hàng:</label>
+            @Html.DropDownListFor(m => m.TrangThai, (SelectList)ViewBag.TrangThaiList, new { @class = "form-control", style = "max-width:300px;" })
+        </div>
+        <button type="submit" class="btn btn-success mt-2">💾 Lưu cập nhật</button>
+        <a href="@Url.Action("DonHang")" class="btn btn-secondary mt-2">⬅ Quay lại</a>
+    }
+</div>
+
+<h4>📋 Danh sách sản phẩm trong đơn</h4>
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ct in chiTiet)
+        {
+            <tr>
+                <td>@ct.SanPham.TenSP</td>
+                <td>@ct.SoLuong</td>
+                <td>@String.Format("{0:N0} ₫", ct.DonGia)</td>
+                <td>@String.Format("{0:N0} ₫", ct.SoLuong * ct.DonGia)</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Jollibee Việt Nam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/site.css" />
+    <link rel="icon" href="~/images/logo.png" type="image/png" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="lang">
+                <a href="#">VN</a> | <a href="#">EN</a>
+            </div>
+            <div class="location">
+                <i class="fa fa-map-marker-alt"></i> Hồ Chí Minh
+            </div>
+            <div class="account">
+                @if (Session["Role"]?.ToString() == "KhachHang")
+                {
+                    <span>Xin chào, <strong>@Session["UserName"]</strong>!</span> 
+< a href = "@Url.Action("Logout","Account")" > Đăng xuất </ a >
+}
+else
+{
+            <a href="@Url.Action("Login","Account") "class="btn btn-danger mb-3">Đăng nhập</a> 
+            <a href="@Url.Action("Register","Account") "class="btn btn-success mb-3">Đăng ký</a>
+}
+            </div>
+            <button class="pickup-btn">PICK UP</button>
+            <div class="hotline">
+                <span>1900-1533</span><br />
+                <strong>GIAO HÀNG TẬN NƠI</strong>
+            </div>
+        </div>
+        <nav class="navbar">
+            
+            <ul class="nav-links">
+                <li><a href="@Url.Action("Index","Home")" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")">TRANG CHỦ</a></li>
+                <li><a href="#">VỀ JOLLIBEE</a></li>
+                <li><a href="@Url.Action("Menu","Product")">THỰC ĐƠN</a></li>
+                <li><a href="@Url.Action("Promotion","Home")">KHUYẾN MÃI</a></li>
+                <li><a href="#">DỊCH VỤ</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">CỬA HÀNG</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+                <li><a href="#">TUYỂN DỤNG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH - BẮT BUỘC PHẢI CÓ -->
+    <main class="content">
+        @RenderBody()
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            
+            <p><strong>CÔNG TY TNHH JOLLIBEE VIỆT NAM</strong></p>
+            <p>Địa chỉ: Tầng 26, Tòa nhà CII Tower, số 152 Điện Biên Phủ,<br />Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh</p>
+            <p>Điện thoại: (028) 39309168</p>
+            <p>Tổng đài: 1900-1533</p>
+            <p>Mã số thuế: 0303883266</p>
+            <p>Ngày cấp: 15/07/2008 – Nơi cấp: Cục Thuế Hồ Chí Minh</p>
+        </div>
+        <div class="footer-center">
+            <p><strong>Liên hệ</strong></p>
+            <p>Chính sách và quy định chung</p>
+            <p>Chính sách thanh toán khi đặt hàng</p>
+            <p>Chính sách bảo mật thông tin</p>
+            <p>Thông tin vận chuyển và giao nhận</p>
+            <p>Hướng dẫn đặt phần ăn</p>
+        </div>
+        <div class="footer-right">
+            <p><strong>HÃY KẾT NỐI VỚI CHÚNG TÔI</strong></p>
+            <p>Facebook</p>
+            <img src="~/images/dathongbao.png" alt="Đã thông báo Bộ Công Thương" class="verify-img" />
+            <p><strong>TẢI ỨNG DỤNG ĐẶT HÀNG VỚI NHIỀU ƯU ĐÃI HƠN</strong></p>
+            <div class="app-links">
+                <img src="~/images/googleplay.png" alt="Google Play" />
+                <img src="~/images/appstore.png" alt="App Store" />
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-bar">
+        <p>
+            Trang web này sử dụng cookie để cải thiện trải nghiệm của bạn.
+            <a href="#">Tùy chỉnh</a> | <a href="#">Chấp nhận Cookie</a>
+        </p>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

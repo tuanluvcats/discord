@@ -1,0 +1,349 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Quản lý sản phẩm";
+}
+
+<style>
+    .product-image {
+        max-width: 80px;
+        max-height: 80px;
+        object-fit: cover;
+    }
+
+    .btn-action {
+        margin: 2px;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+</style>
+
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-box"></i> Quản lý sản phẩm</h2>
+        <a href="@Url.Action("ThemSanPham", "Admin")" class="btn btn-success">
+            <i class="fas fa-plus"></i> Thêm sản phẩm
+        </a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="card shadow">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle" id="tblProducts">
+                    <thead class="table-dark">
+                        <tr>
+                            <th width="50">ID</th>
+                            <th width="100">Ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th width="120">Giá</th>
+                            <th width="100">Số lượng</th>
+                            <th width="150">Loại</th>
+                            <th width="140">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productList">
+                        <tr>
+                            <td colspan="7" class="text-center">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Đang tải...</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal SỬA sản phẩm (vẫn dùng API) -->
+<div class="modal fade" id="modalProduct" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Sửa sản phẩm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="frmProduct" enctype="multipart/form-data">
+                    <input type="hidden" id="productId" name="MaSP">
+                    <input type="hidden" id="currentImage" name="CurrentImage">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="mb-3">
+                                <label class="form-label">Tên sản phẩm <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="txtTenSP" name="TenSP" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Giá (VNĐ) <span class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" id="txtGia" name="Gia" min="0" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Số lượng <span class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" id="txtSoLuong" name="SoLuong" min="0" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Loại sản phẩm</label>
+                                <select class="form-select" id="ddlMaLoai" name="MaLoai">
+                                    <option value="">-- Chọn loại --</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Mô tả</label>
+                                <textarea class="form-control" id="txtMoTa" name="MoTa" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Hình ảnh mới (tùy chọn)</label>
+                                <input type="file" class="form-control" id="fileAnh" name="Anh" accept="image/*" onchange="previewImage(this)">
+                                <small class="text-muted">Bỏ trống nếu không đổi ảnh</small>
+                            </div>
+
+                            <div class="text-center">
+                                <img id="imgPreview" src="~/Content/HinhAnhSP/default.jpg" class="img-thumbnail" style="max-width: 200px;" alt="Preview">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" onclick="saveProduct()">
+                    <i class="fas fa-save"></i> Cập nhật
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+    const API_BASE = '@Url.Content("~/api/Product")';
+    let categories = [];
+
+    $(document).ready(function () {
+        loadCategories();
+        loadProducts();
+    });
+
+    function loadCategories() {
+        $.get(API_BASE + '/Categories')
+            .done(function (data) {
+                categories = data;
+                let options = '<option value="">-- Chọn loại --</option>';
+                data.forEach(cat => {
+                    options += `<option value="${cat.MaLoai}">${cat.TenLoai}</option>`;
+                });
+                $('#ddlMaLoai').html(options);
+            })
+            .fail(function () {
+                console.error('Không thể tải danh mục');
+            });
+    }
+
+    function loadProducts() {
+        $.get(API_BASE)
+            .done(function (data) {
+                renderProducts(data);
+            })
+            .fail(function () {
+                $('#productList').html('<tr><td colspan="7" class="text-center text-danger">Lỗi tải dữ liệu!</td></tr>');
+            });
+    }
+
+    function renderProducts(products) {
+        if (!products || products.length === 0) {
+            $('#productList').html('<tr><td colspan="7" class="text-center text-muted">Chưa có sản phẩm nào</td></tr>');
+            return;
+        }
+
+        let html = '';
+        products.forEach(p => {
+            const imgSrc = p.Anh ? '@Url.Content("~/Content/HinhAnhSP/")' + p.Anh : '@Url.Content("~/Content/HinhAnhSP/default.jpg")';
+            html += `
+                <tr>
+                    <td class="text-center">${p.MaSP}</td>
+                    <td class="text-center">
+                        <img src="${imgSrc}" class="product-image img-thumbnail" alt="${p.TenSP}"
+                             onerror="this.src='@Url.Content("~/Content/HinhAnhSP/default.jpg")'">
+                    </td>
+                    <td><strong>${p.TenSP}</strong></td>
+                    <td class="text-end text-danger fw-bold">${formatCurrency(p.Gia)}</td>
+                    <td class="text-center">${p.SoLuong || 0}</td>
+                    <td>${p.TenLoai || '<em class="text-muted">Chưa phân loại</em>'}</td>
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-warning btn-action" onclick="openEditModal(${p.MaSP})" title="Sửa">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-sm btn-danger btn-action" onclick="deleteProduct(${p.MaSP}, '${escapeHtml(p.TenSP)}')" title="Xóa">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `;
+        });
+        $('#productList').html(html);
+    }
+
+    function escapeHtml(text) {
+        if (!text) return '';
+        return text.replace(/'/g, "\\'");
+    }
+
+    function formatCurrency(value) {
+        if (!value) return '0 đ';
+        return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
+    }
+
+    function previewImage(input) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imgPreview').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function openEditModal(id) {
+        $.get(API_BASE + '/' + id)
+            .done(function (p) {
+                $('#modalTitle').text('Sửa sản phẩm #' + p.MaSP);
+                $('#productId').val(p.MaSP);
+                $('#txtTenSP').val(p.TenSP);
+                $('#txtGia').val(p.Gia);
+                $('#txtSoLuong').val(p.SoLuong);
+                $('#ddlMaLoai').val(p.MaLoai || '');
+                $('#txtMoTa').val(p.MoTa);
+                $('#currentImage').val(p.Anh);
+
+                const imgSrc = p.Anh ? '@Url.Content("~/Content/HinhAnhSP/")' + p.Anh : '@Url.Content("~/Content/HinhAnhSP/default.jpg")';
+                $('#imgPreview').attr('src', imgSrc);
+
+                $('#modalProduct').modal('show');
+            })
+            .fail(function () {
+                alert('Không thể tải thông tin sản phẩm!');
+            });
+    }
+
+    function saveProduct() {
+        const id = $('#productId').val();
+        const file = $('#fileAnh')[0].files[0];
+
+        if (file) {
+            saveProductWithImage(id);
+        } else {
+            saveProductJSON(id);
+        }
+    }
+
+    function saveProductJSON(id) {
+        const data = {
+            MaSP: parseInt(id),
+            TenSP: $('#txtTenSP').val(),
+            Gia: parseFloat($('#txtGia').val()),
+            SoLuong: parseInt($('#txtSoLuong').val()),
+            MaLoai: $('#ddlMaLoai').val() ? parseInt($('#ddlMaLoai').val()) : null,
+            MoTa: $('#txtMoTa').val(),
+            Anh: $('#currentImage').val() || 'default.jpg'
+        };
+
+        $.ajax({
+            url: API_BASE + '/' + id,
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(data)
+        })
+        .done(function (res) {
+            if (res.success !== false) {
+                alert(res.message || 'Cập nhật thành công!');
+                $('#modalProduct').modal('hide');
+                loadProducts();
+            } else {
+                alert('Lỗi: ' + res.message);
+            }
+        })
+        .fail(function () {
+            alert('Lỗi kết nối server!');
+        });
+    }
+
+    function saveProductWithImage(id) {
+        const formData = new FormData();
+        formData.append('TenSP', $('#txtTenSP').val());
+        formData.append('Gia', $('#txtGia').val());
+        formData.append('SoLuong', $('#txtSoLuong').val());
+
+        const maLoai = $('#ddlMaLoai').val();
+        if (maLoai) formData.append('MaLoai', maLoai);
+
+        const moTa = $('#txtMoTa').val();
+        if (moTa) formData.append('MoTa', moTa);
+
+        const file = $('#fileAnh')[0].files[0];
+        if (file) formData.append('Anh', file);
+
+        $.ajax({
+            url: API_BASE + '/update-with-image/' + id,
+            type: 'PUT',
+            data: formData,
+            processData: false,
+            contentType: false
+        })
+        .done(function (res) {
+            if (res.success) {
+                alert(res.message);
+                $('#modalProduct').modal('hide');
+                loadProducts();
+            } else {
+                alert('Lỗi: ' + res.message);
+            }
+        })
+        .fail(function (xhr) {
+            alert('Lỗi kết nối server! ' + xhr.status);
+        });
+    }
+
+    function deleteProduct(id, name) {
+        if (!confirm(`Bạn có chắc muốn xóa sản phẩm "${name}"?\n\nHành động này không thể hoàn tác!`)) {
+            return;
+        }
+
+        $.ajax({
+            url: API_BASE + '/' + id,
+            type: 'DELETE'
+        })
+        .done(function (res) {
+            if (res.success) {
+                alert(res.message);
+                loadProducts();
+            } else {
+                alert('Lỗi: ' + res.message);
+            }
+        })
+        .fail(function () {
+            alert('Lỗi kết nối server!');
+        });
+    }
+    </script>
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />

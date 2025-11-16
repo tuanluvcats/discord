@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Jollibee Việt Nam</title>
+
+    <!-- Bootstrap 5 + Font Awesome -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/site.css" />
+    <link rel="icon" href="~/images/logo.png" type="image/png" />
+
+    <style>
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .top-bar {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .navbar-brand img {
+            height: 75px;
+        }
+
+        .menu-category {
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+            .menu-category.active {
+                background-color: #dc3545 !important;
+                color: white !important;
+                font-weight: bold;
+            }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .product-card {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+            background: white;
+        }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+
+            .product-card img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .product-price {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            margin-top: 8px;
+            font-size: 0.9em;
+        }
+
+
+        #searchResults .search-item:hover {
+            background-color: #f8f9fa !important;
+        }
+
+        #searchResults .text-truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-card {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(220,53,69,0.15);
+            }
+
+            .product-card img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+        .text-truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="top-bar py-2">
+            <div class="container d-flex justify-content-between align-items-center text-white small">
+                <div class="lang">
+                    <a href="#" class="text-white text-decoration-none">🇻🇳 VN</a> |
+                    <a href="#" class="text-white text-decoration-none">🇬🇧 EN</a>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="location">
+                        <i class="fa fa-map-marker-alt"></i> Hồ Chí Minh
+                    </div>
+
+
+
+                    <!-- TÀI KHOẢN -->
+                    <div class="account">
+                        @if (Session["Role"]?.ToString() == "KhachHang")
+                        {
+                            <span>
+                                <i class="fas fa-user-circle"></i>
+                                <strong>@Session["UserName"]</strong>
+                            </span>
+                            <span class="mx-2">|</span>
+                            <a href="@Url.Action("Logout","Account")" class="text-white text-decoration-none">
+                                <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Login","Account")" class="text-white text-decoration-none">
+                                <i class="fas fa-sign-in-alt"></i> Đăng nhập
+                            </a>
+                            <span class="mx-2">|</span>
+                            <a href="@Url.Action("Register","Account")" class="text-white text-decoration-none">
+                                <i class="fas fa-user-plus"></i> Đăng ký
+                            </a>
+                        }
+                    </div>
+                    <!-- THANH TÌM KIẾM -->
+                    <div class="position-relative me-3 d-none d-md-flex align-items-center">
+                        <input type="text"
+                               id="searchInput"
+                               class="form-control form-control-sm rounded-pill"
+                               placeholder="Tìm món ăn..."
+                               style="width: 280px; padding-right: 40px;"
+                               autocomplete="off">
+                        <i class="fas fa-search position-absolute text-muted"
+                           style="right: 12px; top: 50%; transform: translateY(-50%); pointer-events: none;"></i>
+
+                        <!-- KẾT QUẢ TÌM KIẾM -->
+                        <div id="searchResults"
+                             class="position-absolute top-100 start-0 w-100 bg-white border mt-1 rounded shadow-lg"
+                             style="z-index: 1050; max-height: 400px; overflow-y: auto; display: none;">
+                            <!-- Kết quả AJAX sẽ hiện ở đây -->
+                        </div>
+                    </div>
+                    <!-- GIỎ HÀNG -->
+                    @if (Session["MaTK"] != null)
+                    {
+                        <a href="@Url.Action("Index", "Cart")" class="btn btn-light btn-sm position-relative">
+                            <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark" id="cartBadge">
+                                0
+                            </span>
+                        </a>
+                    }
+
+                    <div class="hotline">
+                        <i class="fas fa-phone-alt"></i> <strong>1900-1533</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                    <img src="~/Content/HinhAnhLogo/logo2.jpg" alt="Jollibee Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active text-danger fw-bold" : "")"
+                               href="@Url.Action("Index","Home")">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-utensils"></i> THỰC ĐƠN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("DanhMuc", "Home", new { tenLoai = "Gà Rán" })">
+                                        GÀ RÁN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("DanhMuc", "Home", new { tenLoai = "Mỳ Ý" })">
+                                        Mỳ Ý
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("DanhMuc", "Home", new { tenLoai = "Nước Uống" })">
+                                        NƯỚC UỐNG
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("DanhMuc", "Home", new { tenLoai = "Burger" })">
+                                        BURGER
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("DanhMuc", "Home", new { tenLoai = "Combo Gia Đình" })">
+                                        COMBO GIA ĐÌNH
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="@Url.Action("DanhMuc", "Home", new { tenLoai = "Tráng Miệng" })">
+                                        TRÁNG MIỆNG
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "VeJollibee" ? "active text-danger fw-bold" : "")"
+                               href="@Url.Action("VeJollibee","Home")">Về Jollibee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "LienHe" ? "active text-danger fw-bold" : "")"
+                               href="@Url.Action("LienHe", "Home")">
+                                <i class="fas fa-phone"></i> LIÊN HỆ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH -->
+    <div class="container-fluid mt-4">
+        @RenderBody()
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-r text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="~/Content/HinhAnhLogo/jollibee1.png" alt="Logo" height="60" class="mb-3" />
+                    <p><strong>CÔNG TY TNHH JOLLIBEE VIỆT NAM</strong></p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Tầng 26, Tòa nhà CII Tower, số 152 Điện Biên Phủ,<br />
+                        Phường Thạnh Mỹ Tây, TP.HCM
+                    </p>
+                    <p><i class="fas fa-phone"></i> (028) 39309168</p>
+                    <p><i class="fas fa-headset"></i> Tổng đài: 1900-1533</p>
+                    <p>Mã số thuế: 0303883266</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><strong>Liên hệ</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Chính sách và quy định chung</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Chính sách thanh toán</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Thông tin vận chuyển</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Hướng dẫn đặt hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5><strong>KẾT NỐI VỚI CHÚNG TÔI</strong></h5>
+                    <p>
+                        <a href="#" class="text-white me-3 fs-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-3"><i class="fab fa-youtube"></i></a>
+                    </p>
+                    <img src="~/Content/HinhAnhLogo/dathongbao.png" alt="Đã thông báo" class="img-fluid mb-3" style="max-width:150px;" />
+                    <p><strong>TẢI ỨNG DỤNG</strong></p>
+                    <div class="d-flex gap-2">
+                        <img src="~/Content/HinhAnhLogo/ggplay.png" alt="Google Play" class="img-fluid" style="max-width:120px;" />
+                        <img src="~/Content/HinhAnhLogo/appstore.png" alt="App Store" class="img-fluid" style="max-width:120px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("scripts", required: false)
+
+    <!-- === SCRIPT CHUNG: TÌM KIẾM + GIỎ HÀNG + MENU CẤP 2 === -->
+    <script>
+    $(document).ready(function () {
+        let searchTimeout;
+
+        // === TÌM KIẾM SẢN PHẨM ===
+        $('#searchInput').on('input', function () {
+            clearTimeout(searchTimeout);
+            const keyword = $(this).val().trim();
+
+            if (keyword.length < 2) {
+                $('#searchResults').hide().empty();
+                return;
+            }
+
+            searchTimeout = setTimeout(() => {
+                $.get('@Url.Action("SearchProducts", "Home")', { keyword: keyword })
+                    .done(function (data) {
+                        const $results = $('#searchResults').empty();
+
+                        if (data.length === 0) {
+                            $results.append('<div class="p-3 text-muted small">Không tìm thấy sản phẩm</div>');
+                        } else {
+                            data.forEach(item => {
+                                const price = new Intl.NumberFormat('vi-VN').format(item.gia) + 'đ';
+                                const url = '@Url.Action("ThucDon", "Home")'; // Có thể cải thiện
+                                const html = `
+                                    <a href="${url}#${item.maSP}" class="d-flex p-2 border-bottom text-decoration-none text-dark search-item">
+                                        <img src="~/Content/HinhAnhSP/${item.anh}" class="me-3"
+                                             style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                                        <div class="flex-grow-1">
+                                            <div class="fw-bold small">${item.tenSP}</div>
+                                            <div class="text-danger small">${price}</div>
+                                        </div>
+                                    </a>`;
+                                $results.append(html);
+                            });
+                        }
+                        $results.show();
+                    })
+                    .fail(() => {
+                        $('#searchResults').html('<div class="p-3 text-danger small">Lỗi tìm kiếm</div>').show();
+                    });
+            }, 300);
+        });
+
+        // Ẩn kết quả khi click ngoài
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('#searchInput, #searchResults').length) {
+                $('#searchResults').hide();
+            }
+        });
+
+        // === CẬP NHẬT GIỎ HÀNG BADGE ===
+        function updateCartBadge() {
+            if ($('#cartBadge').length === 0) return;
+
+            $.get('@Url.Action("Index", "Cart")', function (data) {
+                const count = $(data).find('tbody tr').length;
+                $('#cartBadge').text(count > 0 ? count : '0');
+            }).fail(() => $('#cartBadge').text('0'));
+        }
+
+        updateCartBadge();
+
+        // === THÊM VÀO GIỎ (dùng trong ThucDon.cshtml) ===
+        $(document).on('click', '.add-to-cart', function () {
+            const maSP = $(this).data('id');
+            const btn = $(this);
+
+            @if (Session["MaTK"] == null)
+            {
+                <text>
+                alert('Vui lòng đăng nhập để thêm vào giỏ hàng!');
+                window.location.href = '@Url.Action("Login", "Account")';
+                return;
+                </text>
+            }
+
+            $.post('@Url.Action("ThemVaoGio", "Cart")', { maSP: maSP }, function (res) {
+                if (res.success) {
+                    alert(res.message);
+                    updateCartBadge();
+                    btn.html('<i class="fas fa-check"></i> Đã thêm').prop('disabled', true);
+                    setTimeout(() => {
+                        btn.html('<i class="fas fa-cart-plus"></i> Thêm vào giỏ').prop('disabled', false);
+                    }, 1500);
+                } else {
+                    alert(res.message || 'Lỗi khi thêm sản phẩm!');
+                }
+            }).fail(() => {
+                alert('Lỗi kết nối. Vui lòng thử lại!');
+            });
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function () {
+        let searchTimeout;
+
+        $('#searchInput').on('input', function () {
+            clearTimeout(searchTimeout);
+            const keyword = $(this).val().trim();
+
+            if (keyword.length < 2) {
+                $('#searchResults').hide().empty();
+                return;
+            }
+
+            searchTimeout = setTimeout(() => {
+                $.get('@Url.Action("SearchProducts", "Home")', { keyword: keyword })
+                    .done(function (data) {
+                        const $results = $('#searchResults').empty();
+
+                        if (data.length === 0) {
+                            $results.append(`
+                                <div class="p-3 text-center text-muted small">
+                                    <i class="fas fa-search me-2"></i>
+                                    Không tìm thấy sản phẩm
+                                </div>
+                            `);
+                        } else {
+                            data.forEach(item => {
+                                const price = new Intl.NumberFormat('vi-VN').format(item.gia) + 'đ';
+                                const html = `
+                                    <a href="${item.url}" class="d-flex p-3 border-bottom text-decoration-none text-dark search-item hover-bg-light">
+                                        <img src="~/Content/HinhAnhSP/${item.anh}"
+                                             class="me-3 rounded"
+                                             style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div class="flex-grow-1">
+                                            <div class="fw-bold small text-truncate" style="max-width: 200px;">${item.tenSP}</div>
+                                            <div class="text-danger small">${price}</div>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-muted align-self-center"></i>
+                                    </a>`;
+                                $results.append(html);
+                            });
+                        }
+                        $results.show();
+                    })
+                    .fail(() => {
+                        $('#searchResults').html(`
+                            <div class="p-3 text-danger small text-center">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                Lỗi tìm kiếm
+                            </div>
+                        `).show();
+                    });
+            }, 300);
+        });
+
+        // Ẩn khi click ra ngoài
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('#searchInput, #searchResults').length) {
+                $('#searchResults').hide();
+            }
+        });
+
+        // Ẩn khi click vào kết quả
+        $(document).on('click', '.search-item', function () {
+            $('#searchResults').hide();
+            $('#searchInput').val('');
+        });
+    });
+    </script>
+</body>
+</html>
+
+

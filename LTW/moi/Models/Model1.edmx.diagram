@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="34ada2ae7e374ab3a7912d14335dceb3" Name="Diagram1">
+        <EntityTypeShape EntityType="QL_BanGaRanModel.ChiTietHoaDon" Width="1.5" PointX="7.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.HoaDon" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.KhachHang" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.LoaiSanPham" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.NhanVien" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.SanPham" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.TaiKhoan" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__ChiTietHoa__MaHD__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__ChiTietHoa__MaSP__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__HoaDon__MaKH__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__HoaDon__MaNV__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__KhachHang__MaTK__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__SanPham__MaLoai__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__NhanVien__MaTK__1A14E395" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.GioHang" Width="1.5" PointX="3" PointY="12.375" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.GioHangChiTiet" Width="1.5" PointX="7.5" PointY="10.5" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__GioHang__MaTK__49C3F6B7" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__GioHangChi__MaGH__4D94879B" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__GioHangChi__MaSP__4E88ABD4" />
+        <EntityTypeShape EntityType="QL_BanGaRanModel.ThanhToan" Width="1.5" PointX="7.5" PointY="6.25" />
+        <AssociationConnector Association="QL_BanGaRanModel.FK__ThanhToan__MaHD__5165187F" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

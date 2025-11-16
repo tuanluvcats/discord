@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "Liên Hệ - Jollibee Việt Nam";
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+
+<!-- BANNER LIÊN HỆ -->
+<div class="bg-danger text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-5 fw-bold mb-3">LIÊN HỆ VỚI CHÚNG TÔI</h1>
+        <p class="lead">Jollibee luôn sẵn sàng lắng nghe bạn!</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row g-5">
+        <!-- THÔNG TIN LIÊN HỆ -->
+        <div class="col-lg-5">
+            <div class="bg-light p-4 rounded shadow-sm h-100">
+                <h3 class="text-danger fw-bold mb-4">
+                    <i class="fas fa-headset me-2"></i> Thông Tin Liên Hệ
+                </h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                        <strong>Trụ sở chính:</strong><br>
+                        Tầng 26, Tòa nhà CII Tower, 152 Điện Biên Phủ, P. 25, Q. Bình Thạnh, TP.HCM
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-phone-alt text-danger me-2"></i>
+                        <strong>Hotline:</strong> <a href="tel:19001533" class="text-danger">1900-1533</a>
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-envelope text-danger me-2"></i>
+                        <strong>Email:</strong>
+                        <a href="mailto:info@jollibee.com.vn" class="text-danger">info@jollibee.com.vn</a>
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-clock text-danger me-2"></i>
+                        <strong>Giờ làm việc:</strong><br>
+                        Thứ 2 - Thứ 6: 8:00 - 17:30<br>
+                        Thứ 7: 8:00 - 12:00
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h5 class="text-danger fw-bold mb-3">
+                    <i class="fab fa-facebook me-2"></i> Kết Nối Với Chúng Tôi
+                </h5>
+                <div class="d-flex gap-3">
+                    <a href="https://facebook.com/JollibeeVietnam" target="_blank" class="text-danger fs-4">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/jollibeevn" target="_blank" class="text-danger fs-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/jollibeevn" target="_blank" class="text-danger fs-4">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORM LIÊN HỆ -->
+        <div class="col-lg-7">
+            <div class="bg-white p-4 rounded shadow-sm">
+                <h3 class="text-danger fw-bold mb-4">
+                    <i class="fas fa-paper-plane me-2"></i> Gửi Tin Nhắn Cho Chúng Tôi
+                </h3>
+
+                <form id="contactForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Họ và tên *</label>
+                            <input type="text" class="form-control" id="hoTen" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Số điện thoại *</label>
+                            <input type="tel" class="form-control" id="dienThoai" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Tiêu đề *</label>
+                            <input type="text" class="form-control" id="tieuDe" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Nội dung *</label>
+                            <textarea class="form-control" rows="5" id="noiDung" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-danger btn-lg px-5">
+                                <i class="fas fa-paper-plane me-2"></i> Gửi Tin Nhắn
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="contactMessage" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BẢN ĐỒ GOOGLE MAPS -->
+    <div class="mt-5">
+        <h3 class="text-danger fw-bold mb-4 text-center">
+            <i class="fas fa-map me-2"></i> Tìm Chúng Tôi Trên Bản Đồ
+        </h3>
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.159!2d106.713!3d10.794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175297f51f!2sCII%20Tower!5e0!3m2!1svi!2s!4v1700000000000"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').on('submit', function (e) {
+                e.preventDefault();
+
+                const formData = {
+                    hoTen: $('#hoTen').val().trim(),
+                    dienThoai: $('#dienThoai').val().trim(),
+                    email: $('#email').val().trim(),
+                    tieuDe: $('#tieuDe').val().trim(),
+                    noiDung: $('#noiDung').val().trim()
+                };
+
+                // Gửi AJAX (nếu có API lưu liên hệ)
+                // $.post('/Home/GuiLienHe', formData, function(res) { ... })
+
+                // Giả lập thành công
+                $('#contactMessage').html(`
+                    <div class="alert alert-success">
+                        <i class="fas fa-check-circle me-2"></i>
+                        Cảm ơn bạn! Tin nhắn đã được gửi thành công. Chúng tôi sẽ phản hồi sớm nhất!
+                    </div>
+                `).show();
+
+                $('#contactForm')[0].reset();
+                setTimeout(() => $('#contactMessage').fadeOut(), 5000);
+            });
+        });
+    </script>
+}

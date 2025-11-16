@@ -1,0 +1,6 @@
+@BanGaRanApi_HostAddress = http://localhost:5122
+
+GET {{BanGaRanApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,98 @@
+﻿@model List<moi.Models.SanPham>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Danh sách sản phẩm";
+}
+
+<h2 class="mb-4">Danh sách sản phẩm</h2>
+<a href="@Url.Action("ThemSanPham")" class="btn btn-success mb-3">
+    <i class="fas fa-plus"></i> Thêm mới
+</a>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th width="100">Ảnh</th>
+                <th>Tên SP</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Loại</th>
+                <th width="140">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model == null || !Model.Any())
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted py-4">
+                        Chưa có sản phẩm nào.
+                    </td>
+                </tr>
+            }
+            else
+            {
+                foreach (var sp in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/Content/HinhAnhSP/@sp.Anh"
+                                 width="80"
+                                 class="img-thumbnail"
+                                 alt="@sp.TenSP"
+                                 onerror="this.src='~/Content/HinhAnhSP/default.jpg'; this.onerror=null;" />
+                        </td>
+                        <td class="fw-bold">@sp.TenSP</td>
+                        <td class="text-end text-danger fw-bold">
+                            @(sp.Gia.HasValue ? sp.Gia.Value.ToString("N0") : "0") đ
+                        </td>
+                        <td class="text-center">@(sp.SoLuong ?? 0)</td>
+                        <td>@(sp.LoaiSanPham?.TenLoai ?? "<em class='text-muted'>Chưa chọn</em>")</td>
+                        <td>
+                            <a href="@Url.Action("SuaSanPham", new { id = sp.MaSP })"
+                               class="btn btn-warning btn-sm" title="Sửa">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <button type="button"
+                                    class="btn btn-danger btn-sm btn-delete"
+                                    data-id="@sp.MaSP"
+                                    data-name="@sp.TenSP"
+                                    title="Xóa">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- jQuery + Font Awesome (nếu chưa có trong _Layout) -->
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).on('click', '.btn-delete', function () {
+            var id = $(this).data('id');
+            var name = $(this).data('name');
+
+            if (confirm('Xóa sản phẩm "' + name + '"?\n\nHành động này không thể hoàn tác!')) {
+                $.post('@Url.Action("XoaSanPham")', { id: id })
+                    .done(function (res) {
+                        if (res.success) {
+                            alert(res.message);
+                            location.reload();
+                        } else {
+                            alert('Lỗi: ' + (res.message || 'Không thể xóa!'));
+                        }
+                    })
+                    .fail(function () {
+                        alert('Lỗi kết nối server!');
+                    });
+            }
+        });
+    </script>
+}
+
+<!-- Font Awesome (nếu chưa có) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />

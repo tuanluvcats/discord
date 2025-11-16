@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - Jollibee Admin</title>
+    <link rel="stylesheet" href="~/css/admin.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        .fa-shake {
+            animation: shake 0.5s infinite;
+        }
+
+        @@keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            75% {
+                transform: translateX(5px);
+            }
+        }
+
+        .order-detail-item {
+            padding: 10px;
+            border-left: 3px solid #28a745;
+            background: #f8f9fa;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bootstrap Modal cho đơn hàng mới -->
+    <div class="modal fade" id="newOrderModal" tabindex="-1" aria-labelledby="newOrderModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="newOrderModalLabel">
+                        <i class="fas fa-bell fa-shake"></i> Đơn hàng mới!
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="orderModalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <a id="viewOrderBtn" href="#" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> Xem chi tiết
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-danger text-white p-3">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Quản trị Jollibee</h2>
+                <nav>
+                    <a href="/Admin/Index" class="text-white mx-2 btn btn-primary mb-3">Dashboard</a>
+                    <a href="/Admin/SanPham" class="text-white mx-2 btn btn-primary mb-3">Sản phẩm</a>
+                    <a href="/Admin/DonHang" class="text-white mx-2 btn btn-primary mb-3">
+                        Hóa đơn
+                        <span id="pendingBadge" class="badge bg-danger" style="display:none;">0</span>
+                    </a>
+                    <a href="/Account/Logout" class="text-white mx-2 btn btn-close-white mb-3">Đăng xuất</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid mt-4">
+        @RenderBody()
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script Polling đơn hàng mới -->
+    <script>
+        $(document).ready(function () {
+            var lastOrderId = 0;
+            var notificationAudio = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBTGH0fPTgjMGHm7A7+OZUQ0PVa/n77BdGAg+lt7xwW8fBSyBzvLZiTYJGGe57OSYTgwNTqTi7bVmHgc2j9Tvxnfq');
+
+            // Lấy lastOrderId ban đầu
+            $.ajax({
+                type: 'GET',
+                url: '/api/Order/GetLatestOrderId',
+                success: function (data) {
+                    lastOrderId = data || 0;
+                    console.log('Bắt đầu theo dõi từ đơn hàng #' + lastOrderId);
+                },
+                error: function (err) {
+                    console.log('Lỗi lấy lastOrderId:', err);
+                }
+            });
+
+            // Kiểm tra đơn hàng mới
+            function checkNewOrders() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/api/Order/NewOrdersSinceId',
+                    data: { sinceOrderId: lastOrderId },
+                    success: function (newOrders) {
+                        console.log('Kiểm tra đơn hàng mới:', newOrders);
+                        if (newOrders && newOrders.length > 0) {
+                            showOrderModal(newOrders[0]);
+                            lastOrderId = Math.max(...newOrders.map(o => o.MaHD));
+
+                            if (newOrders.length > 1) {
+                                setTimeout(function () {
+                                    alert('Có ' + (newOrders.length - 1) + ' đơn hàng khác đang chờ!');
+                                }, 3000);
+                            }
+                        }
+                    },
+                    error: function (err) {
+                        console.log('Lỗi kiểm tra đơn hàng:', err);
+                    }
+                });
+            }
+
+            // Hiển thị modal
+            function showOrderModal(order) {
+                console.log('Hiển thị modal cho đơn:', order);
+
+                var orderDate = new Date(order.NgayLap);
+                var timeStr = orderDate.toLocaleTimeString('vi-VN');
+                var dateStr = orderDate.toLocaleDateString('vi-VN');
+
+                var modalContent =
+                    '<div class="order-detail-item">' +
+                    '<h5 class="text-success mb-3"><i class="fas fa-receipt"></i> Thông tin đơn hàng</h5>' +
+                    '<p class="mb-2"><strong>Mã đơn:</strong> <span class="badge bg-primary">#' + order.MaHD + '</span></p>' +
+                    '<p class="mb-2"><strong>Khách hàng:</strong> ' + order.TenKhachHang + '</p>' +
+                    '<p class="mb-2"><strong>Tổng tiền:</strong> <span class="text-danger fw-bold">' + order.TongTien.toLocaleString() + ' đ</span></p>' +
+                    '<p class="mb-2"><strong>Trạng thái:</strong> <span class="badge bg-warning">' + order.TrangThai + '</span></p>' +
+                    '<p class="mb-0"><strong>Thời gian:</strong> ' + timeStr + ' - ' + dateStr + '</p>' +
+                    '</div>';
+
+                $('#orderModalBody').html(modalContent);
+                $('#viewOrderBtn').attr('href', '/Admin/CapNhatDonHang/' + order.MaHD);
+
+                var modal = new bootstrap.Modal(document.getElementById('newOrderModal'));
+                modal.show();
+
+                notificationAudio.play().catch(function (error) {
+                    console.log('Không thể phát âm thanh:', error);
+                });
+            }
+
+            // Cập nhật số đơn chờ
+            function updatePendingCount() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/api/Order/PendingCount',
+                    success: function (count) {
+                        if (count > 0) {
+                            $('#pendingBadge').text(count).show();
+                        } else {
+                            $('#pendingBadge').hide();
+                        }
+                    },
+                    error: function (err) {
+                        console.log('Lỗi cập nhật pending count:', err);
+                    }
+                });
+            }
+
+            // Chạy polling mỗi 10 giây
+            setInterval(checkNewOrders, 10000);
+            setInterval(updatePendingCount, 10000);
+
+            // Chạy ngay lần đầu
+            updatePendingCount();
+        });
+    </script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

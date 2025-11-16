@@ -1,0 +1,21 @@
+﻿@model List<moi.Models.SanPham>
+@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+    ViewBag.Title = "rang chủ";
+}
+<div class="row">
+    @foreach (var sp in Model)
+    {
+        <div class="col-md-3 mb-4">
+            <div class="card h-100">
+                <img src="~/Content/HinhAnhSP/@sp.Anh" class="card-img-top" style="height:200px; object-fit:cover;" />
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@sp.TenSP</h5>
+                    <p class="text-danger fw-bold mt-auto">@sp.Gia:N0 đ</p>
+                    <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

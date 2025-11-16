@@ -1,0 +1,67 @@
+﻿@model moi.Models.SanPham
+@{
+    ViewBag.Title = "Thêm sản phẩm mới";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Nhập Thông Tin Sản Phẩm</h2>
+
+@if (ViewBag.ThongBao != null)
+{
+    <div class="alert alert-success">@ViewBag.ThongBao</div>
+}
+
+@using (Html.BeginForm("ThemSanPham", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container">
+        <div class="row g-3">
+
+            <div class="col-md-6">
+                <label class="form-label">Tên sản phẩm <span class="text-danger">*</span></label>
+                @Html.TextBoxFor(m => m.TenSP, new { @class = "form-control", placeholder = "Nhập tên sản phẩm", required = "required" })
+                @Html.ValidationMessageFor(m => m.TenSP, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Đơn giá <span class="text-danger">*</span></label>
+                @Html.TextBoxFor(m => m.Gia, new { @class = "form-control", type = "number", step = "0.01", min = "0", placeholder = "0.00", required = "required" })
+                @Html.ValidationMessageFor(m => m.Gia, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Số lượng</label>
+                @Html.TextBoxFor(m => m.SoLuong, new { @class = "form-control", type = "number", min = "0", placeholder = "0" })
+                @Html.ValidationMessageFor(m => m.SoLuong, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Loại sản phẩm <span class="text-danger">*</span></label>
+                @Html.DropDownListFor(m => m.MaLoai, ViewBag.ListLoai as SelectList, "-- Chọn loại --", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(m => m.MaLoai, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Hình ảnh</label>
+                <input type="file" name="Anh" class="form-control" accept="image/*" />
+                <small class="text-muted">Chọn hình ảnh đại diện (JPG, PNG)</small>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Mô tả</label>
+                @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control", rows = "4", placeholder = "Nhập mô tả sản phẩm..." })
+                @Html.ValidationMessageFor(m => m.MoTa, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-primary me-2">
+                    <i class="fas fa-save"></i> Lưu Sản Phẩm
+                </button>
+                <a href="@Url.Action("SanPham")" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Quay lại
+                </a>
+            </div>
+        </div>
+    </div>
+}

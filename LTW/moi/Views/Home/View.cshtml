@@ -1,0 +1,87 @@
+﻿@model IEnumerable<moi.Models.SanPham>
+@{
+    ViewBag.Title = ViewBag.TenLoai + " - Jollibee Việt Nam";
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+
+<div class="container py-5">
+    <!-- Tiêu đề -->
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-danger">
+            @ViewBag.TenLoai
+        </h1>
+        <p class="text-muted">Khám phá những món ngon từ Jollibee</p>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    @if (Model != null && Model.Any())
+    {
+        <div class="product-list">
+            @foreach (var sp in Model)
+            {
+                <div class="product-card">
+                    <img src="~/Content/HinhAnhSP/@sp.Anh"
+                         alt="@sp.TenSP"
+                         class="img-fluid"
+                         onerror="this.src='/Content/HinhAnhSP/default.jpg'" />
+                    <div class="product-info">
+                        <h5 class="product-name">@sp.TenSP</h5>
+                        <p class="product-price">@String.Format("{0:N0}", sp.Gia)đ</p>
+                        <button class="btn btn-danger btn-sm add-to-cart w-100"
+                                data-id="@sp.MaSP">
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-utensils fa-3x text-muted mb-3"></i>
+            <p class="text-muted">Chưa có sản phẩm nào trong danh mục này.</p>
+        </div>
+    }
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // Thêm vào giỏ hàng
+            $('.add-to-cart').on('click', function () {
+                const maSP = $(this).data('id');
+                const btn = $(this);
+
+                @if (Session["MaTK"] == null)
+                {
+                    <text>
+                    alert('Vui lòng đăng nhập để thêm vào giỏ hàng!');
+                    window.location.href = '@Url.Action("Login", "Account")';
+                    return;
+                    </text>
+                }
+
+                $.post('@Url.Action("ThemVaoGio", "Cart")', { maSP: maSP }, function (res) {
+                    if (res.success) {
+                        alert(res.message);
+                        updateCartBadge();
+                        btn.html('<i class="fas fa-check"></i> Đã thêm').prop('disabled', true);
+                        setTimeout(() => {
+                            btn.html('<i class="fas fa-cart-plus"></i> Thêm vào giỏ').prop('disabled', false);
+                        }, 1500);
+                    } else {
+                        alert(res.message);
+                    }
+                });
+            });
+
+            function updateCartBadge() {
+                $.get('@Url.Action("Index", "Cart")', function (data) {
+                    const count = $(data).find('tr').length - 1;
+                    $('#cartBadge').text(count > 0 ? count : '0');
+                });
+            }
+        });
+    </script>
+}

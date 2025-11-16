@@ -1,0 +1,543 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thang\\Downloads\\LTW\\moi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Shared\\_LayoutCustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Shared\\_LayoutCustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|c:\\users\\thang\\downloads\\ltw\\moi\\views\\home\\chitietsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:views\\home\\chitietsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Shared\\_LayoutAdmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Shared\\_LayoutAdmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\views\\home\\lienhe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:views\\home\\lienhe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\AdminController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Controllers\\AdminController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|c:\\users\\thang\\downloads\\ltw\\moi\\views\\home\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:views\\home\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|c:\\users\\thang\\downloads\\ltw\\moi\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\SanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Admin\\SanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|c:\\users\\thang\\downloads\\ltw\\moi\\views\\home\\vejollibee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:views\\home\\vejollibee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|c:\\users\\thang\\downloads\\ltw\\moi\\views\\cart\\thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:views\\cart\\thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\CapNhatDonHang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Admin\\CapNhatDonHang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\ThemSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Admin\\ThemSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|c:\\users\\thang\\downloads\\ltw\\moi\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|c:\\users\\thang\\downloads\\ltw\\moi\\models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\apicontrollers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:apicontrollers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\apicontrollers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:apicontrollers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\App_Start\\FilterConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:App_Start\\FilterConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\DonHang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Admin\\DonHang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\SuaSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Admin\\SuaSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\XoaSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Admin\\XoaSanPham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Admin\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Account\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Account\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Views\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|C:\\Users\\thang\\Downloads\\LTW\\moi\\Content\\Site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{326BDEF4-E91E-4C8B-A337-C54908027B74}|moi.csproj|solutionrelative:Content\\Site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:46:32.723Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "Controllers\\HomeController.cs*",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAmwE4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:17:02.447Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChiTietSanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\ChiTietSanPham.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ChiTietSanPham.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\ChiTietSanPham.cshtml*",
+              "RelativeToolTip": "Views\\Home\\ChiTietSanPham.cshtml*",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAgwIMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T19:31:55.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T18:18:40.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T17:54:34.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LayoutCustomer.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Shared\\_LayoutCustomer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutCustomer.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Shared\\_LayoutCustomer.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_LayoutCustomer.cshtml*",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAgwH4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T18:25:42.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:04:37.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T17:13:55.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LienHe.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\LienHe.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\LienHe.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\LienHe.cshtml",
+              "RelativeToolTip": "Views\\Home\\LienHe.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T07:54:20.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\View.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\View.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\View.cshtml",
+              "RelativeToolTip": "Views\\Home\\View.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T19:03:30.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\SanPham.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\SanPham.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\SanPham.cshtml",
+              "RelativeToolTip": "Views\\Admin\\SanPham.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T17:58:56.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VeJollibee.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\VeJollibee.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\VeJollibee.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Home\\VeJollibee.cshtml",
+              "RelativeToolTip": "Views\\Home\\VeJollibee.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T07:57:41.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ThanhToan.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Cart\\ThanhToan.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\ThanhToan.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Cart\\ThanhToan.cshtml",
+              "RelativeToolTip": "Views\\Cart\\ThanhToan.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-15T17:14:55.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CapNhatDonHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\CapNhatDonHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CapNhatDonHang.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\CapNhatDonHang.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CapNhatDonHang.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T01:50:46.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ThemSanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\ThemSanPham.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ThemSanPham.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\ThemSanPham.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ThemSanPham.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T18:48:24.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T07:44:25.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "Models\\SanPham.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Models\\SanPham.cs",
+              "RelativeToolTip": "Models\\SanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T17:13:03.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoaiSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Models\\LoaiSanPham.cs",
+              "RelativeDocumentMoniker": "Models\\LoaiSanPham.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Models\\LoaiSanPham.cs",
+              "RelativeToolTip": "Models\\LoaiSanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T17:10:17.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:24:08.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DonHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\DonHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DonHang.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\DonHang.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DonHang.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwDUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-13T01:49:12.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-11-15T07:43:51.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\ApiControllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "ApiControllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\ApiControllers\\OrderController.cs",
+              "RelativeToolTip": "ApiControllers\\OrderController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T07:46:29.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\ApiControllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ApiControllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\ApiControllers\\HomeController.cs",
+              "RelativeToolTip": "ApiControllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T07:47:53.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:51:48.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T18:07:04.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SuaSanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\SuaSanPham.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\SuaSanPham.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\SuaSanPham.cshtml",
+              "RelativeToolTip": "Views\\Admin\\SuaSanPham.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T19:09:16.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "XoaSanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\XoaSanPham.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\XoaSanPham.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\XoaSanPham.cshtml",
+              "RelativeToolTip": "Views\\Admin\\XoaSanPham.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T19:11:08.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T17:50:13.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T18:12:32.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Web.config",
+              "RelativeDocumentMoniker": "Views\\Web.config",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Views\\Web.config",
+              "RelativeToolTip": "Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-11T18:20:53.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Content\\Site.css",
+              "RelativeDocumentMoniker": "Content\\Site.css",
+              "ToolTip": "C:\\Users\\thang\\Downloads\\LTW\\moi\\Content\\Site.css",
+              "RelativeToolTip": "Content\\Site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-11T16:55:56.227Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

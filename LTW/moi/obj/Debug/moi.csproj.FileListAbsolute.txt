@@ -1,0 +1,381 @@
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\moi.dll.config
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\moi.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\moi.pdb
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\csc.exe
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\csc.exe.config
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\csc.rsp
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\csi.exe
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\csi.exe.config
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\csi.rsp
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.Managed.Core.targets
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.AppContext.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Collections.Immutable.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Console.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Globalization.Calendars.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.IO.Compression.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.IO.FileSystem.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Net.Http.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Net.Sockets.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Reflection.Metadata.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.ValueTuple.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Xml.XmlDocument.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Xml.XPath.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\vbc.exe
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\vbc.exe.config
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\vbc.rsp
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\VBCSCompiler.exe
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\roslyn\VBCSCompiler.exe.config
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\Antlr3.Runtime.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\EntityFramework.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\Microsoft.Web.Infrastructure.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\Newtonsoft.Json.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Helpers.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Mvc.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Optimization.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Razor.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.WebPages.Deployment.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.WebPages.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.WebPages.Razor.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\WebGrease.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\EntityFramework.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Helpers.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Mvc.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Optimization.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.Razor.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.WebPages.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.WebPages.Deployment.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\System.Web.WebPages.Razor.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\Newtonsoft.Json.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\Antlr3.Runtime.pdb
+D:\bài học\LapTrinhWeb\Đồ án\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\bài học\LapTrinhWeb\Đồ án\moi\obj\Debug\moi.csproj.AssemblyReference.cache
+D:\bài học\LapTrinhWeb\Đồ án\moi\obj\Debug\moi.csproj.CoreCompileInputs.cache
+D:\bài học\LapTrinhWeb\Đồ án\moi\obj\Debug\moi.csproj.Up2Date
+D:\bài học\LapTrinhWeb\Đồ án\moi\obj\Debug\moi.dll
+D:\bài học\LapTrinhWeb\Đồ án\moi\obj\Debug\moi.pdb
+C:\Users\gmone\Documents\LTW\moi\bin\moi.dll.config
+C:\Users\gmone\Documents\LTW\moi\bin\moi.dll
+C:\Users\gmone\Documents\LTW\moi\bin\moi.pdb
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\csc.exe
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\csc.exe.config
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\csc.rsp
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\csi.exe
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\csi.exe.config
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\csi.rsp
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.AppContext.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Console.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.IO.Compression.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Net.Http.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.ValueTuple.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\vbc.exe
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\vbc.exe.config
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\vbc.rsp
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\VBCSCompiler.exe
+C:\Users\gmone\Documents\LTW\moi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gmone\Documents\LTW\moi\bin\Antlr3.Runtime.dll
+C:\Users\gmone\Documents\LTW\moi\bin\EntityFramework.dll
+C:\Users\gmone\Documents\LTW\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gmone\Documents\LTW\moi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gmone\Documents\LTW\moi\bin\Newtonsoft.Json.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Helpers.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Mvc.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Optimization.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Razor.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.WebPages.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.WebPages.Razor.dll
+C:\Users\gmone\Documents\LTW\moi\bin\WebGrease.dll
+C:\Users\gmone\Documents\LTW\moi\bin\EntityFramework.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Helpers.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Mvc.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Optimization.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Razor.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.WebPages.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.WebPages.Razor.xml
+C:\Users\gmone\Documents\LTW\moi\bin\Newtonsoft.Json.xml
+C:\Users\gmone\Documents\LTW\moi\bin\Antlr3.Runtime.pdb
+C:\Users\gmone\Documents\LTW\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gmone\Documents\LTW\moi\obj\Debug\moi.csproj.AssemblyReference.cache
+C:\Users\gmone\Documents\LTW\moi\obj\Debug\moi.csproj.CoreCompileInputs.cache
+C:\Users\gmone\Documents\LTW\moi\obj\Debug\moi.csproj.Up2Date
+C:\Users\gmone\Documents\LTW\moi\obj\Debug\moi.dll
+C:\Users\gmone\Documents\LTW\moi\obj\Debug\moi.pdb
+C:\Users\gmone\Documents\LTW\moi\bin\Newtonsoft.Json.Bson.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Buffers.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Memory.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Net.Http.Formatting.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Numerics.Vectors.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Http.dll
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Http.WebHost.dll
+C:\Users\gmone\Documents\LTW\moi\bin\Newtonsoft.Json.Bson.pdb
+C:\Users\gmone\Documents\LTW\moi\bin\Newtonsoft.Json.Bson.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Buffers.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Memory.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Net.Http.Formatting.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Numerics.Vectors.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Http.xml
+C:\Users\gmone\Documents\LTW\moi\bin\System.Web.Http.WebHost.xml
+C:\Users\thang\Downloads\LTW\moi\bin\moi.dll.config
+C:\Users\thang\Downloads\LTW\moi\bin\moi.dll
+C:\Users\thang\Downloads\LTW\moi\bin\moi.pdb
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\csc.exe
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\csc.exe.config
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\csc.rsp
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\csi.exe
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\csi.exe.config
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\csi.rsp
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.AppContext.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Console.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.IO.Compression.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Net.Http.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.ValueTuple.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\vbc.exe
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\vbc.exe.config
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\vbc.rsp
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\VBCSCompiler.exe
+C:\Users\thang\Downloads\LTW\moi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\thang\Downloads\LTW\moi\bin\Antlr3.Runtime.dll
+C:\Users\thang\Downloads\LTW\moi\bin\EntityFramework.dll
+C:\Users\thang\Downloads\LTW\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\thang\Downloads\LTW\moi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\thang\Downloads\LTW\moi\bin\Newtonsoft.Json.Bson.dll
+C:\Users\thang\Downloads\LTW\moi\bin\Newtonsoft.Json.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Buffers.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Memory.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Net.Http.Formatting.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Numerics.Vectors.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Helpers.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Http.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Http.WebHost.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Mvc.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Optimization.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Razor.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.WebPages.dll
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.WebPages.Razor.dll
+C:\Users\thang\Downloads\LTW\moi\bin\WebGrease.dll
+C:\Users\thang\Downloads\LTW\moi\bin\EntityFramework.xml
+C:\Users\thang\Downloads\LTW\moi\bin\Newtonsoft.Json.Bson.pdb
+C:\Users\thang\Downloads\LTW\moi\bin\Newtonsoft.Json.Bson.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Buffers.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Memory.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Net.Http.Formatting.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Numerics.Vectors.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Http.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Http.WebHost.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Helpers.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Mvc.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Optimization.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.Razor.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.WebPages.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\thang\Downloads\LTW\moi\bin\System.Web.WebPages.Razor.xml
+C:\Users\thang\Downloads\LTW\moi\bin\Newtonsoft.Json.xml
+C:\Users\thang\Downloads\LTW\moi\bin\Antlr3.Runtime.pdb
+C:\Users\thang\Downloads\LTW\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\thang\Downloads\LTW\moi\obj\Debug\moi.csproj.AssemblyReference.cache
+C:\Users\thang\Downloads\LTW\moi\obj\Debug\moi.csproj.CoreCompileInputs.cache
+C:\Users\thang\Downloads\LTW\moi\obj\Debug\moi.csproj.Up2Date
+C:\Users\thang\Downloads\LTW\moi\obj\Debug\moi.dll
+C:\Users\thang\Downloads\LTW\moi\obj\Debug\moi.pdb
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\moi.dll.config
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\moi.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\moi.pdb
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\csc.exe
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\csc.exe.config
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\csc.rsp
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\csi.exe
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\csi.exe.config
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\csi.rsp
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.AppContext.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Console.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.IO.Compression.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Net.Http.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.ValueTuple.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\vbc.exe
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\vbc.exe.config
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\vbc.rsp
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\VBCSCompiler.exe
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Antlr3.Runtime.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\EntityFramework.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Newtonsoft.Json.Bson.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Newtonsoft.Json.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Buffers.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Memory.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Net.Http.Formatting.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Numerics.Vectors.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Helpers.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Http.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Http.WebHost.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Mvc.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Optimization.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Razor.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.WebPages.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.WebPages.Razor.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\WebGrease.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\EntityFramework.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Newtonsoft.Json.Bson.pdb
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Newtonsoft.Json.Bson.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Buffers.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Memory.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Net.Http.Formatting.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Numerics.Vectors.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Http.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Http.WebHost.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Helpers.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Mvc.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Optimization.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.Razor.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.WebPages.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\System.Web.WebPages.Razor.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Newtonsoft.Json.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Antlr3.Runtime.pdb
+C:\Users\gmone\Documents\LTW\LTW\moi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gmone\Documents\LTW\LTW\moi\obj\Debug\moi.csproj.AssemblyReference.cache
+C:\Users\gmone\Documents\LTW\LTW\moi\obj\Debug\moi.csproj.CoreCompileInputs.cache
+C:\Users\gmone\Documents\LTW\LTW\moi\obj\Debug\moi.csproj.Up2Date
+C:\Users\gmone\Documents\LTW\LTW\moi\obj\Debug\moi.dll
+C:\Users\gmone\Documents\LTW\LTW\moi\obj\Debug\moi.pdb
